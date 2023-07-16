@@ -11,7 +11,6 @@ export const App: React.FC = () => {
     clientX: 0,
     clientY: 0,
   });
-  const [launch, setLaunch] = useState<boolean>(false);
 
   const handleMouseMove = (event: MouseEvent) => {
     const { clientX, clientY } = event;
@@ -35,8 +34,7 @@ export const App: React.FC = () => {
           y: coords.clientY
         }}
       />
-      <RouterProvider router={router}>
-      </RouterProvider>
+      <RouterProvider router={router} />
     </div>
   )
 }
