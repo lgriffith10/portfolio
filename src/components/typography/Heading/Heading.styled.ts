@@ -10,9 +10,14 @@ export const StHeading = styled('div')<IHeading>(
         color: tokens.colors.black.DEFAULT,
         fontSize: '6rem',
         fontFamily: tokens.fonts.bebas
+      },
+      description: {
+        color: tokens.colors.blue.lightest,
+        fontSize: '40rem',
+        fontFamily: tokens.fonts.bebas
       }
     }
   })
 );
 
-export type variants = 'primary'
+export type variants = 'primary' | 'description'

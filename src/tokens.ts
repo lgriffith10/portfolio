@@ -5,6 +5,9 @@ const tokens = {
     },
     black: {
       DEFAULT: '#000'
+    },
+    blue: {
+      lightest: '#40E0D0'
     }
   },
   fonts: {

@@ -3,12 +3,19 @@ import { Page } from '@/components/layouts';
 import { Heading } from '@/components/typography/Heading/Heading';
 import { Text } from'@/components/typography/Text/Text';
 import { motion } from 'framer-motion';
+import { useAtom } from 'jotai';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { step } from '@/store';
 
 export const Intro: React.FC = () => {
   const [launch, setLaunch] = useState<boolean>(false);
   const navigate = useNavigate();
+  const [value, setValue] = useAtom(step)
+
+  useEffect(() => {
+    setValue(0);
+  }, [setValue])
 
   useEffect(() => {
     if (launch){
@@ -29,7 +36,7 @@ export const Intro: React.FC = () => {
 
       {launch && 
         <motion.div
-          className='fixed bg-black'
+          className='fixed bg-black z-[20]'
           initial={{ height: '0%', width: '100%', top: 0 }}
           animate={{ height: '100%', top: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
@@ -65,8 +72,8 @@ export const Intro: React.FC = () => {
           transition={{ duration: 0.3, delay: 2.1 }}
           className='mt-[2rem]'
         >
-          <Button onClick={() => setLaunch(true)}>
-            French front-end developer
+          <Button background="white" onClick={() => setLaunch(true)}>
+            Discover
           </Button>
         </motion.div>
       </motion.div>

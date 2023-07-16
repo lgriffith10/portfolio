@@ -11,9 +11,13 @@ export const StText = styled('p')(
       primary: {
         fontSize: '2rem',
         color: tokens.colors.black.DEFAULT,
+      },
+      description: {
+        fontSize: '9rem',
+        color: tokens.colors.blue.lightest
       }
     }
   })
 );
 
-export type variants = 'primary'
+export type variants = 'primary' | 'description'

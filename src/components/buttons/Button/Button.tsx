@@ -1,12 +1,12 @@
 import { StButton } from './Button.styled';
 
-export interface ButtonProps {
+export interface IButton {
   onClick: () => void,
-  background?: string,
+  background?: 'black' | 'white',
   children?: React.ReactNode
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, ...rest}) => {
+export const Button: React.FC<IButton> = ({ children, ...rest}) => {
   return (
     <StButton {...rest}>
       {children}

@@ -15,6 +15,7 @@
     "@types/styled-system": "^5.1.16",
     "autoprefixer": "^10.4.14",
     "framer-motion": "^10.12.18",
+    "jotai": "^2.2.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "postcss": "^8.4.24",
