@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes } from 'react';
 import { StButton } from './Button.styled';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps {
+  onClick: () => void,
   background?: string,
   children?: React.ReactNode
 }
