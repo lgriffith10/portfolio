@@ -1,0 +1,41 @@
+seo:
+  title: "Luciano Griffith - Frontend developer"
+  description: "Welcome to my portfolio! I'm Luciano Griffith, a front-end developer based in Montpellier. I specialize in creating intuitive and functional user experiences on SaaS products."
+title: "Hey, I'm Luciano Griffith -  Frontend developer"
+description: "I craft intuitive digital experiences where performance meets functionality. Based in Montpellier in France, I'm looking to take on new challenges overseas."
+hero:
+  links:
+    - label: "Contact me"
+      to: mailto:griffith.luciano@gmail.com
+      color: "neutral"
+  images:
+    - src: /hero/typescript.png
+      alt: TypeScript logo
+    - src: /hero/vue.png
+      alt: Vue.js logo
+    - src: /hero/tailwind.png
+      alt: Tailwind CSS logo
+    - src: /hero/node.png
+      alt: Node.js logo
+    - src: /hero/csharp.jpg
+      alt: C# logo
+about:
+  title: "About Me"
+  description: |
+    As a Front-End Developer specializing in Vue.js and TypeScript, I build reliable, high-performance web applications that align with product and business goals. With 3 years of experience and a degree in Web Development from the University of Reims Champagne-Ardenne, I focus on writing clean, maintainable code and delivering efficient, scalable solutions.
+    I’m also versatile enough to contribute to backend development when needed, working with technologies such as C# and Node.js to support full-stack initiatives.
+experience:
+  title: Work Experience
+  items:
+    - position: "Fullstack Developer"
+      date: "2023 - Present"
+      company:
+        name: Bazimo
+        url: "https://www.bazimo.fr/"
+        color: "#00DC82"
+    - position: "Frontend developer"
+      date: "2022 - 2023"
+      company:
+        name: Namkin
+        url: "https://namkin.fr/"
+        color: "#FF6363"
